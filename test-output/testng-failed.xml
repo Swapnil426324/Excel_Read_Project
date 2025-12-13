@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tka.registerdemo.AddUser_Test">
+      <class name="com.tka.excel_read.DataProvider_Demo">
         <methods>
-          <include name="setUp"/>
-          <include name="test_addUser" invocation-numbers="0 2"/>
-          <include name="tearDown"/>
+          <include name="validLogin" invocation-numbers="2"/>
         </methods>
-      </class> <!-- com.tka.registerdemo.AddUser_Test -->
+      </class> <!-- com.tka.excel_read.DataProvider_Demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
