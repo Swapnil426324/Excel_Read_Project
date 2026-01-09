@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class A {
+public class ParllalExample {
 	WebDriver driver;
 
 	@Parameters({ "browser", "url" })
