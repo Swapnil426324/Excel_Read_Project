@@ -36,7 +36,7 @@ public class ExcelUtils {
 			FileInputStream fis = null;
 			Workbook wb = null;
 			try {
-				fis = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/" + fileName + ".xlsx");
+				fis = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/" + fileName + ".xlsx");
 				wb = WorkbookFactory.create(fis);
 			} catch (Exception e) {
 				e.printStackTrace();

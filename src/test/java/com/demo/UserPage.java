@@ -34,7 +34,7 @@ public class UserPage {
 		List<String> expectedText = new ArrayList<String>();
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 8; j++) {
-				expectedText.add(ExcelUtils.excelRead("LoginData", "Sheet2", i, j));
+				expectedText.add(ExcelUtils.excelRead("LoginData1", "Sheet2", i, j));
 			}
 		}
 		System.out.println("actualText" + actualText);
