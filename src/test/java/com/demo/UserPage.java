@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UserPage {
@@ -26,9 +27,21 @@ public class UserPage {
 			}
 
 			for (WebElement dataText : actualData) {
-				System.out.println(dataText.getText());
+				actualText.add(dataText.getText());
 			}
 		}
 
+		List<String> expectedText = new ArrayList<String>();
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 8; j++) {
+				expectedText.add(ExcelUtils.excelRead("LoginData", "Sheet2", i, j));
+			}
+		}
+		System.out.println("actualText" + actualText);
+		System.out.println("expectedText" + expectedText);
+		Assert.assertEquals(actualText, expectedText);
 	}
+	
+	
+
 }

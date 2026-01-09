@@ -14,7 +14,7 @@ public class ExcelUtils {
 		public static String readExcel(String fileName, String sheet) throws Exception {
 			String data = null;
 			DataFormatter df = new DataFormatter();
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources" + fileName + ".xlsx");
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/" + fileName + ".xlsx");
 			Workbook wb = WorkbookFactory.create(fis);
 			Sheet sh = wb.getSheet(sheet);
 			int rows = sh.getLastRowNum();
