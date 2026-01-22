@@ -1,5 +1,6 @@
 package com.demo;
 
-public class B {
+public class BaseTest {
 
+  
 }
